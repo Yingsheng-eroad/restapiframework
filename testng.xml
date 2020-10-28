@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Engineering Core Suite" verbose="10" configfailurepolicy="skip" parallel="methods"
+       data-provider-thread-count="1" thread-count="1">
+    <listeners>
+<!--        <listener class-name="runner.NGTestListener"></listener>-->
+        <listener class-name="extentReport.ITestListenerImpl"></listener>
+
+    </listeners>
+    <test name="NextGEN_APIFramework">
+        <classes>
+            <class name="runner.TestRunner"/>
+        </classes>
+    </test>
+</suite>

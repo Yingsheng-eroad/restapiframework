@@ -6,10 +6,10 @@ import io.restassured.specification.RequestSpecification;
 import utils.FileAndEnv;
 
 //@Listeners(ExtentReportListner.class)
-public class BaseTest {
+public class AmsBaseTest {
 
     public static RequestSpecification spec = null;
-    public static RestAssured restAssured = new RestAssured();
+
     static {
         spec = new RequestSpecBuilder().setBaseUri(FileAndEnv.getInstance().getServerUrl()).build();
     }

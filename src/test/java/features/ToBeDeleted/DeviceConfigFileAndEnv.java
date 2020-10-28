@@ -1,18 +1,14 @@
-package utils;
+package features.ToBeDeleted;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Properties;
 
-
-public class FileAndEnv {
-
+public class DeviceConfigFileAndEnv {
     public static Properties propMain = new Properties();
-    private static final FileAndEnv INSTANCE = new FileAndEnv();
+    private static final DeviceConfigFileAndEnv INSTANCE = new DeviceConfigFileAndEnv();
 
-
-    private FileAndEnv() {
+    private DeviceConfigFileAndEnv() {
 
     }
 
@@ -36,16 +32,6 @@ public class FileAndEnv {
             System.out.println("FileNotFoundException");
         }
 
-    }
 
-    public String getServerUrl() {
-        return propMain.getProperty("ServerUrl");
     }
-    public String getDeviceConfigUrl(){
-        return propMain.getProperty("DeviceConfigUrl");
-    }
-    public static FileAndEnv getInstance() {
-        return INSTANCE;
-    }
-
 }

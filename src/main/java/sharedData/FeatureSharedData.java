@@ -1,4 +1,4 @@
-package features;
+package sharedData;
 
 import java.util.HashMap;
 import java.util.Map;
